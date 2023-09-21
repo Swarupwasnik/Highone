@@ -1,0 +1,8 @@
+.relative {
+    position: relative;
+  }
+  .fixed {
+    position: sticky;
+    bottom: 1rem;
+    z-index: 999;
+  }

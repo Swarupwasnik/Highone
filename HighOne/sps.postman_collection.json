@@ -1,0 +1,1052 @@
+{
+	"info": {
+		"_postman_id": "484d87ee-24d4-49c2-851e-9400a6e70ae2",
+		"name": "sps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27224165",
+		"_collection_link": "https://solar-water-14854.postman.co/workspace/Team-Workspace~9170d08a-5276-4eb5-8b24-474ad05495b3/collection/27224165-484d87ee-24d4-49c2-851e-9400a6e70ae2?action=share&creator=27224165&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Post Title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "st_class",
+									"value": "['i','ii','iii']",
+									"type": "text"
+								},
+								{
+									"key": "subject_code",
+									"value": "[001,005,027]",
+									"type": "text"
+								},
+								{
+									"key": "is_allow",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "teacher_code",
+									"value": "0018",
+									"type": "text"
+								},
+								{
+									"key": "media",
+									"type": "file",
+									"src": "/C:/Users/USER/Desktop/sample.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Post_Api/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Post_Api",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Thsi is post",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "st_class",
+											"value": "['i','ii','iii']",
+											"type": "text"
+										},
+										{
+											"key": "subject_code",
+											"value": "[001,005,027]",
+											"type": "text"
+										},
+										{
+											"key": "is_allow",
+											"value": "True",
+											"type": "text"
+										},
+										{
+											"key": "teacher_code",
+											"value": "0018",
+											"type": "text"
+										},
+										{
+											"key": "media",
+											"type": "file",
+											"src": "/C:/Users/USER/Desktop/sample.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BaseUrl}}Teacher/Post_Api/",
+									"host": [
+										"{{BaseUrl}}Teacher"
+									],
+									"path": [
+										"Post_Api",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.18.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Apr 2023 12:27:23 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie, Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Post added successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"post_id\":\"108\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Delete_PostApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Delete_PostApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Teacher post",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "st_class",
+									"value": "[ {\"class\": \"['i','ii','iii']\" }, {\"section\": \"['A','B','C']\" }]",
+									"type": "text"
+								},
+								{
+									"key": "subject_code",
+									"value": "[001,005,027]",
+									"type": "text"
+								},
+								{
+									"key": "is_allow",
+									"value": "False",
+									"type": "text"
+								},
+								{
+									"key": "teacher_code",
+									"value": "00018",
+									"type": "text"
+								},
+								{
+									"key": "media",
+									"type": "file",
+									"src": "/C:/Users/USER/Desktop/sample.png"
+								},
+								{
+									"key": "post_id",
+									"value": "181",
+									"type": "text"
+								},
+								{
+									"key": "teacher_name",
+									"value": "Rupesh",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Edit_PostApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Edit_PostApi",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Thsi is post",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "st_class",
+											"value": "['i','ii','iii']",
+											"type": "text"
+										},
+										{
+											"key": "subject_code",
+											"value": "[001,005,027]",
+											"type": "text"
+										},
+										{
+											"key": "is_allow",
+											"value": "True",
+											"type": "text"
+										},
+										{
+											"key": "teacher_code",
+											"value": "0018",
+											"type": "text"
+										},
+										{
+											"key": "media",
+											"type": "file",
+											"src": "/C:/Users/USER/Desktop/sample.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BaseUrl}}Teacher/Post_Api/",
+									"host": [
+										"{{BaseUrl}}Teacher"
+									],
+									"path": [
+										"Post_Api",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.18.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Apr 2023 12:27:23 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie, Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Post added successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n// { \"user_type\":\"Teacher\",\"teacher_code\":\"00029\", \"class\":\"viii AB\"}\r\n{ \"user_type\":\"Admin\",\"teacher_code\":\"\", \"class\":\"\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Get_PostApi/?page=1",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Get_PostApi",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Class SubjectList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Get_Class_SubjectList/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Get_Class_SubjectList",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"post_id\":\"126\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/View_PostApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"View_PostApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like unlike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"like_by\":\"Teacher\",\r\n  \"post_id\":\"231\",\r\n  \"t_code\":\"00029\",\r\n\"emoji_type\":\"Thumb\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/PostLikeUnlikeApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"PostLikeUnlikeApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fk_post\":\"132\",\r\n  \"student_code\":\"\",  \r\n  \"comment\":\"This is comment\",\r\n  \"comment_by\":\"Admin\",\r\n  \"st_name\":\"Manoj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/PostCommentApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"PostCommentApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment Reply",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fk_comment\":\"64\",\r\n  \"teacher_code\":\"\",\r\n  \"teacher_name\":\"Admin\",\r\n  \"reply\":\"This is reply\",\r\n  \"reply_by\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/CommentReplyApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"CommentReplyApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Comment Reply",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fk_comment\":\"62\",\r\n  \"teacher_code\":\"\",\r\n  \"teacher_name\":\"Manoj\",\r\n  \"reply\":\"This is comment\",\r\n  \"reply_by\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/PostCommentReplyApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"PostCommentReplyApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment Like Unlike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"comment_id\":\"64\",\r\n  \"student_code\":\"\",\r\n  \"teacher_code\":\"\",\r\n  \"like_by\":\"Admin\",\r\n  \"emoji_type\":\"Thumb\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/CommentLikeUnlike/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"CommentLikeUnlike",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reply Like Unlike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reply_id\":\"1\",\r\n  \"student_code\":\"\",\r\n  \"teacher_code\":\"\",\r\n  \"like_by\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/ReplyLikeUnlikeApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"ReplyLikeUnlikeApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"comment_id\":\"168\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Delete_CommentApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Delete_CommentApi",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"teacher_code\":\"00018\",\r\n \"test_name\":\"Manoj Khadse\",\r\n \"st_class\":\"pre mb\",\r\n \"subject\":\"Maths\",\r\n \"duration\":\"20\",\r\n \"no_of_question\":\"30\",\r\n \"start_date\":\"2023-04-13T18:38\",\r\n \"added_by\":\"Teacher\",  \r\n \"question\": [{\"question_answer\":\"Manoj Khase\",\"question\":\"Whis is your name\", \"media\":\"\",\"single_choice\":\"True\",\"fillinblanks\":\"False\",\"true_false\":\"True\",\"option\":[1,2,3,4],\"answer\":\"1\"},{\"question_answer\":\"Yaman\",\"question\":\"Whis is your name\", \"media\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAYAAAAj6qa3AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAAAAAAAAPlDu38AAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfnAxwMGAuGKavYAAAEDElEQVRo3t1ZTUhUURg9d+zdbyZDSspFBMEE6YxBklGBYJs2UZAtoqxNq4GgUMgYxUVTG4UCg1BwMfSzaZNproJalIGE9IOI089go+UuxOgHeonvtHjMGE7hvDc/zzqbC/Pmu98553587757gRKDFgCsWUPqft0/MkLqW/rWkyckAJSVlZpPyUEaQ8bQyZOkiAi5NBqPjcfNzV7zK74BlrRJ28uX2QZIszSPj9uVoJTXPAsvnHpCTxw69Afhy8cyKTt4sFS8fCX0YBSj0WgOVt3hnVz+94+AVuBI4MjevTms/LLRP+AfaGjwmn/+BlDqpG542LkB0iAN9+97zT8P4bpRN4ZCpGySTYuLLgyokArLomWMG+M7dhSLZzF7wEZs7OgA8AVffG7ymDCVglJX1JULF4rIs7AgpUu6gkFSwhL++dPFyi8f0/N0SVcwWGi+K75v7ffyhg2gv9vfXVsLRZLhsP00GARwAzdqa0G+4ItwGEqFVGjrVgCf8KkoO7sYYvPzAEEkEgDCCE9OAniKp+/fg9iFXYkElJpRM5OTgNlhdkxP2zsLy8oygDQ+GB+OHwd8z3zPmppAjGGsuhrALGa3b4fCIAbLy4sgpDQgjuLo9+8AtmDLu3dQ2IM9b98C1j5r39CQIqVHeubmALSjvbLSa74ldKaTnXNzPlCNqbGWFgAVqMgukf8Qtk76Xvtet7ZmegApFJ4+DaAKVfE43Hfv1QqBkCAiiJw5o3zmVfNqf39GoFKmMtXNmwDu4m4kkgn495HWUYe6s2fTwtMPs1ZYKXO/uT8eB7CIxZYWr9nnDfIyL0ejSpkj5khfn4t4ndTJ1tYCvM9LPOqIjrS3F9BIPaAHzp/3XtiKwht1Y2dnrrocHzzYzTIWA+CH/+LFgjmcP37gx6VLdi+LxXINctzlf0uwG7uHh71WnebhVLhrAzIgr/P6KtghknHG1651G+7eAIUUUulvAg+hMIUp9zxc9AAAWL8eEBGZn/da/xJM0zQrK+2Pntx5uagA/4R/YhWsfDavBf9CTY3TKOcGkEkmV6MBHOWoc15uekAvekMhr+Vm60cPepzzcm6A4kM+zKsCdmJnIgHwOZ8fPgwgjviBAyDO4dyrV3nM+wAPSlCZ9gXHzIyDndkj/Wh21j7SikT+dgdo/+7z0dKGNo4dI/VH/TGVcpAnqZPT08UTbgHAunWZ09q/EbHkhJz49s0W3N2djnNuNAAEAqRu023RKClRiX7+vPIpsrt8ORAyDMOor/9D4m2ybWGB1Cmd6u2lVX67/HZVVeEXwJ7XrsC+vqW8WZeshmHU1xfBgMCbwJvNm2npr/rr1BQpp+TUvXukvqavVVcXPOGKfHRER2pqSGmSpsHBJV42z1zn+QXDQFb6aWTS0QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMy0yOFQxMjoyNDoxMSswMDowMPeUBD8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDMtMjhUMTI6MjQ6MTErMDA6MDCGybyDAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAzLTI4VDEyOjI0OjExKzAwOjAw0dydXAAAAABJRU5ErkJggg==\",\"single_choice\":\"True\",\"fillinblanks\":\"False\",\"true_false\":\"True\",\"option\":[1,2,3,4],\"answer\":\"1\"}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Create_TestApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Create_TestApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Test Quiz",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"teacher_code\":\"\",\r\n  \"class\":\"\",\r\n  \"subject\":\"Maths\",\r\n  \"user_type\":\"Admin\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Show_TestQuizApi/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Show_TestQuizApi",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"test_id\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Delete_TestQuiz/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Delete_TestQuiz",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Test Question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"test_id\":\"23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/View_TestQuestion/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"View_TestQuestion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Test Quiz",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_testid\": 26,\r\n    \"teacher_code\": \"00018\",\r\n    \"test_name\": \"Maoj Maths Test\",\r\n    \"st_class\": \"pre mb\",\r\n    \"subject\": \"Science\",\r\n    \"duration\": \"30\",\r\n    \"no_of_question\": \"60\",\r\n    \"start_date\": \"2023-04-13T18:38:00\",\r\n    \"added_by\": \"Teacher\",\r\n    \"question\": [\r\n      {\r\n        \"fk_questionid\": 44,\r\n        \"question\": \"Whis is your name\",\r\n        \"media\": \"\",\r\n        \"single_choice\": true,\r\n        \"fillinblanks\": false,\r\n        \"true_false\": true,\r\n        \"question_answer\": \"Manoj Khase\",\r\n        \"option\": [\r\n          {\r\n            \"fk_optionid\": 153,\r\n            \"option\": \"1\"\r\n          },\r\n          {\r\n            \"fk_optionid\": 154,\r\n            \"option\": \"2\"\r\n          },\r\n          {\r\n            \"fk_optionid\": 155,\r\n            \"option\": \"3\"\r\n          },\r\n          {\r\n            \"fk_optionid\": 156,\r\n            \"option\": \"4\"\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"fk_questionid\": 45,\r\n        \"question\": \"What is your adderess name\",\r\n        \"media\": \"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAYAAAAj6qa3AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAAAAAAAAPlDu38AAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfnAxwMGAuGKavYAAAEDElEQVRo3t1ZTUhUURg9d+zdbyZDSspFBMEE6YxBklGBYJs2UZAtoqxNq4GgUMgYxUVTG4UCg1BwMfSzaZNproJalIGE9IOI089go+UuxOgHeonvtHjMGE7hvDc/zzqbC/Pmu98553587757gRKDFgCsWUPqft0/MkLqW/rWkyckAJSVlZpPyUEaQ8bQyZOkiAi5NBqPjcfNzV7zK74BlrRJ28uX2QZIszSPj9uVoJTXPAsvnHpCTxw69Afhy8cyKTt4sFS8fCX0YBSj0WgOVt3hnVz+94+AVuBI4MjevTms/LLRP+AfaGjwmn/+BlDqpG542LkB0iAN9+97zT8P4bpRN4ZCpGySTYuLLgyokArLomWMG+M7dhSLZzF7wEZs7OgA8AVffG7ymDCVglJX1JULF4rIs7AgpUu6gkFSwhL++dPFyi8f0/N0SVcwWGi+K75v7ffyhg2gv9vfXVsLRZLhsP00GARwAzdqa0G+4ItwGEqFVGjrVgCf8KkoO7sYYvPzAEEkEgDCCE9OAniKp+/fg9iFXYkElJpRM5OTgNlhdkxP2zsLy8oygDQ+GB+OHwd8z3zPmppAjGGsuhrALGa3b4fCIAbLy4sgpDQgjuLo9+8AtmDLu3dQ2IM9b98C1j5r39CQIqVHeubmALSjvbLSa74ldKaTnXNzPlCNqbGWFgAVqMgukf8Qtk76Xvtet7ZmegApFJ4+DaAKVfE43Hfv1QqBkCAiiJw5o3zmVfNqf39GoFKmMtXNmwDu4m4kkgn495HWUYe6s2fTwtMPs1ZYKXO/uT8eB7CIxZYWr9nnDfIyL0ejSpkj5khfn4t4ndTJ1tYCvM9LPOqIjrS3F9BIPaAHzp/3XtiKwht1Y2dnrrocHzzYzTIWA+CH/+LFgjmcP37gx6VLdi+LxXINctzlf0uwG7uHh71WnebhVLhrAzIgr/P6KtghknHG1651G+7eAIUUUulvAg+hMIUp9zxc9AAAWL8eEBGZn/da/xJM0zQrK+2Pntx5uagA/4R/YhWsfDavBf9CTY3TKOcGkEkmV6MBHOWoc15uekAvekMhr+Vm60cPepzzcm6A4kM+zKsCdmJnIgHwOZ8fPgwgjviBAyDO4dyrV3nM+wAPSlCZ9gXHzIyDndkj/Wh21j7SikT+dgdo/+7z0dKGNo4dI/VH/TGVcpAnqZPT08UTbgHAunWZ09q/EbHkhJz49s0W3N2djnNuNAAEAqRu023RKClRiX7+vPIpsrt8ORAyDMOor/9D4m2ybWGB1Cmd6u2lVX67/HZVVeEXwJ7XrsC+vqW8WZeshmHU1xfBgMCbwJvNm2npr/rr1BQpp+TUvXukvqavVVcXPOGKfHRER2pqSGmSpsHBJV42z1zn+QXDQFb6aWTS0QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMy0yOFQxMjoyNDoxMSswMDowMPeUBD8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDMtMjhUMTI6MjQ6MTErMDA6MDCGybyDAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAzLTI4VDEyOjI0OjExKzAwOjAw0dydXAAAAABJRU5ErkJggg==\",\r\n        \"single_choice\": true,\r\n        \"fillinblanks\": false,\r\n        \"true_false\": true,\r\n        \"marks\": 1,\r\n        \"question_answer\": \"Kaushalya Nagar\",\r\n        \"option\": [\r\n          {\r\n            \"fk_optionid\": 157,\r\n            \"option\": \"7\"\r\n          },\r\n          {\r\n            \"fk_optionid\": 158,\r\n            \"option\": \"8\"\r\n          },\r\n          {\r\n            \"fk_optionid\": 159,\r\n            \"option\": \"3\"\r\n          },\r\n          {\r\n            \"fk_optionid\": 160,\r\n            \"option\": \"4\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Teacher/Edit_TestQuiz/",
+							"host": [
+								"{{BaseUrl}}Teacher"
+							],
+							"path": [
+								"Edit_TestQuiz",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Academic Calender",
+			"item": [
+				{
+					"name": "Show Academic Calender",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}Admin/Show_AcademicCalender/",
+							"host": [
+								"{{BaseUrl}}Admin"
+							],
+							"path": [
+								"Show_AcademicCalender",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Academic Calender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "academic_calender",
+									"type": "file",
+									"src": "/C:/Users/ADMIN/Downloads/Class 6 New (1).pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Admin/Add_AcademicCalender/",
+							"host": [
+								"{{BaseUrl}}Admin"
+							],
+							"path": [
+								"Add_AcademicCalender",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login_id\":\"admin\",\r\n  \"password\":\"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}Admin/Admin_Login_Api/",
+					"host": [
+						"{{BaseUrl}}Admin"
+					],
+					"path": [
+						"Admin_Login_Api",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"login_id\":\"admin\",\r\n  \"password\":\"admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}Admin/Admin_Login_Api/",
+							"host": [
+								"{{BaseUrl}}Admin"
+							],
+							"path": [
+								"Admin_Login_Api",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Apr 2023 13:31:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"msg\": \"Login Successfull.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "teacher login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login_id\":\"00029\",\r\n  \"password\":\"test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}Teacher/TeacherLogin_Api/",
+					"host": [
+						"{{BaseUrl}}Teacher"
+					],
+					"path": [
+						"TeacherLogin_Api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"t_code\":\"00213\",\r\n  \"password\":\"g@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}Teacher/Teacher_ChangePassword/",
+					"host": [
+						"{{BaseUrl}}Teacher"
+					],
+					"path": [
+						"Teacher_ChangePassword",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://31.187.75.67:8000/Teacher/Get_TeacherData/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"t_code\":\"00029\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://31.187.75.67:8000/Teacher/Get_TeacherData/",
+					"protocol": "http",
+					"host": [
+						"31",
+						"187",
+						"75",
+						"67"
+					],
+					"port": "8000",
+					"path": [
+						"Teacher",
+						"Get_TeacherData",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://31.187.75.67:8000/",
+			"type": "string"
+		}
+	]
+}

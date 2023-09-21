@@ -1,0 +1,123 @@
+{
+    "status": 200,
+    "msg": "Dashboard.",
+    "payload": {
+      "total_student": 81,
+      "present_count": 0,
+      "absent_count": 0,
+      "test_result": {
+        "percent0_to_33": "0.00",
+        "percent33_to_55": "22.22",
+        "percent55_to_65": "1.23",
+        "percent65_to_80": "4.94",
+        "percent80_to_90": "0.00",
+        "percent90": "29.63"
+      },
+      "post": [
+        {
+          "id": 643,
+          "title": "Test--Foreground--Noti",
+          "description": "testtttt",
+          "media": "",
+          "created_date": "2023-07-06T15:13:01.990876"
+        },
+        {
+          "id": 642,
+          "title": "test---uioo",
+          "description": "test",
+          "media": "",
+          "created_date": "2023-07-06T15:01:51.725259"
+        },
+        {
+          "id": 641,
+          "title": "mknmk",
+          "description": "test",
+          "media": "",
+          "created_date": "2023-07-06T14:58:51.641196"
+        },
+        {
+          "id": 640,
+          "title": "Test-Post--000",
+          "description": "Testing",
+          "media": "",
+          "created_date": "2023-07-06T14:12:02.268004"
+        },
+        {
+          "id": 639,
+          "title": "JKLMN",
+          "description": "ryhrnruynbgdfgfgsgdffdhdhfg",
+          "media": "",
+          "created_date": "2023-07-06T11:21:32.134567"
+        }
+      ],
+      "studay_material": [
+        {
+          "id": 296,
+          "chapter": "Bg-Vii-Ds",
+          "subject": "ARITHMETIC",
+          "notes1": "Notes/Chapter_3_Current_Electricity_ggctfPl.pdf",
+          "uploaded_date": "2023-07-05T18:17:11.070996",
+          "lession": "Bg-Noti"
+        },
+        {
+          "id": 295,
+          "chapter": "Bg-Viii-AB",
+          "subject": "ARITHMETIC",
+          "notes1": "Notes/Chapter_3_Current_Electricity_5kKlO7o.pdf",
+          "uploaded_date": "2023-07-05T18:16:04.641252",
+          "lession": "Bg-Noti"
+        },
+        {
+          "id": 294,
+          "chapter": "KKKK",
+          "subject": "HISTORY",
+          "notes1": "Notes/AK_Resume0123_byLCrVk.pdf",
+          "uploaded_date": "2023-07-05T17:43:58.624339",
+          "lession": "000"
+        },
+        {
+          "id": 293,
+          "chapter": "Sarfaraz",
+          "subject": "ARITHMETIC",
+          "notes1": "Notes/SukeshaniKamble_qHwsNMJ.pdf",
+          "uploaded_date": "2023-07-05T17:41:44.720171",
+          "lession": "000"
+        },
+        {
+          "id": 292,
+          "chapter": "SarfarazSS",
+          "subject": "ARITHMETIC",
+          "notes1": "Notes/AK_Resume0123_lyODVVd.pdf",
+          "uploaded_date": "2023-07-05T17:40:50.466403",
+          "lession": "000"
+        }
+      ],
+      "circular": [
+        {
+          "title": "try",
+          "description": "yfh",
+          "notice_file": ""
+        },
+        {
+          "title": "TESTE",
+          "description": "JJJJ",
+          "notice_file": ""
+        },
+        {
+          "title": "SSSSS",
+          "description": "SSSSSSSS",
+          "notice_file": ""
+        },
+        {
+          "title": "Testing",
+          "description": "adsdsasd",
+          "notice_file": "Circular/Newspaper_Ad.pdf"
+        },
+        {
+          "title": "ggvjhh",
+          "description": "hojl.pio/ji",
+          "notice_file": ""
+        }
+      ]
+    }
+  }

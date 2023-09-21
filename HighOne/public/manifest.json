@@ -1,0 +1,25 @@
+{
+  "short_name": "School App",
+  "name": "School App",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "SPS Logo - Golden.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "SPS Logo - Golden.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
